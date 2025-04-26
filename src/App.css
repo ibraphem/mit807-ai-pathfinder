@@ -1,0 +1,53 @@
+.app {
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 22pt;
+}
+
+.controls {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 25px);
+  grid-template-rows: repeat(20, 25px);
+  gap: 1px;
+  justify-content: center;
+  margin: auto;
+}
+
+.stats {
+  margin-top: 1rem;
+  font-size: 14pt;
+}
+
+.cell {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+.cell.start {
+  background-color: green;
+}
+.cell.goal {
+  background-color: red;
+}
+.cell.obstacle {
+  background-color: black;
+}
+.cell.visited {
+  background-color: lightblue;
+}
+.cell.path {
+  background-color: gold;
+}
